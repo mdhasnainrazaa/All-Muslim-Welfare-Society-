@@ -42,10 +42,12 @@ const Header = () => {
 
   return (
     <>
-      {/* Top Institutional Micro-Bar */}
-      <div className="bg-[#0B3B24] text-white text-[11px] py-1.5 px-4 sm:px-6 lg:px-8 hidden md:block border-b border-white/10 font-sans">
-        <div className="max-w-[1480px] mx-auto flex items-center justify-between">
-          <div className="flex items-center gap-4 text-brand-light/90">
+      {/* Top Institutional Micro-Bar - Visible above the header on both Mobile & Desktop */}
+      <div className="relative z-50 bg-[#0B3B24] text-white text-[11px] py-1.5 px-3 sm:px-6 lg:px-8 border-b border-white/10 font-sans">
+        <div className="max-w-[1480px] mx-auto flex items-center justify-between gap-2">
+          
+          {/* Desktop/Tablet Left Tagline */}
+          <div className="hidden md:flex items-center gap-4 text-brand-light/90">
             <span className="flex items-center gap-1.5 font-medium">
               <Leaf className="w-3.5 h-3.5 text-brand-gold shrink-0" />
               <span>National Social Welfare Initiative</span>
@@ -56,15 +58,21 @@ const Header = () => {
             </span>
           </div>
 
-          {/* Right: Language Selector & Donate Now Button (in place of Transparency & Inquiries) */}
-          <div className="flex items-center gap-2.5">
+          {/* Mobile Left Indicator */}
+          <div className="flex md:hidden items-center gap-1 text-[11px] font-medium text-brand-light/90">
+            <Leaf className="w-3.5 h-3.5 text-brand-gold shrink-0" />
+            <span className="font-bold tracking-wider text-white text-[11px]">AMWSI</span>
+          </div>
+
+          {/* Right: Language Selector & Donate Now Button - Always visible on mobile & desktop */}
+          <div className="flex items-center gap-2 sm:gap-2.5 shrink-0">
             <LanguageSwitcher />
 
             <Link
               to="/donate"
-              className="inline-flex items-center gap-2 px-4 py-1.5 rounded-lg bg-[#0E4A28] hover:bg-[#08331B] text-white text-xs sm:text-[13px] font-bold shadow-sm border border-white/25 transition-all hover:scale-[1.02] active:scale-[0.98] whitespace-nowrap"
+              className="inline-flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-1.5 rounded-lg bg-[#0E4A28] hover:bg-[#08331B] text-white text-xs sm:text-[13px] font-bold shadow-sm border border-white/25 transition-all hover:scale-[1.02] active:scale-[0.98] whitespace-nowrap"
             >
-              <Heart className="w-4 h-4 text-white" />
+              <Heart className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-white" />
               <span>{t('nav.donateNow')}</span>
             </Link>
           </div>
@@ -189,18 +197,8 @@ const Header = () => {
             })}
           </nav>
 
-          {/* Mobile Right Controls */}
-          <div className="lg:hidden flex items-center gap-2 shrink-0">
-            {/* Quick Mobile Donate Link */}
-            <Link
-              to="/donate"
-              className="inline-flex sm:hidden items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#0E4A28] text-white text-xs font-bold whitespace-nowrap shadow-sm"
-            >
-              <Heart className="w-3.5 h-3.5 text-white" />
-              <span>Donate</span>
-            </Link>
-
-            {/* Mobile Menu Hamburger Toggle */}
+          {/* Mobile Right Controls: Hamburger Toggle */}
+          <div className="lg:hidden flex items-center shrink-0">
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               className="p-2 rounded-lg text-brand-dark hover:bg-brand-cream/80 focus:outline-none focus:ring-2 focus:ring-brand-deep"
