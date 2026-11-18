@@ -1,0 +1,93 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "team": "Our Team",
+    "programmes": "Programmes",
+    "campaigns": "Campaigns",
+    "news": "News & Events",
+    "gallery": "Gallery",
+    "getInvolved": "Get Involved",
+    "transparency": "Transparency",
+    "contact": "Contact",
+    "donateNow": "Donate Now"
+  },
+  "hero": {
+    "headline": "Building a Better Future Through Education, Healthcare & Humanity.",
+    "subtext": "All Muslim Welfare Society India is committed to promoting social welfare through education, healthcare awareness and community-focused initiatives.",
+    "exploreWork": "Explore Our Work",
+    "becomeVolunteer": "Become a Volunteer"
+  },
+  "intro": {
+    "heading": "Working Together for a Better Tomorrow",
+    "text": "All Muslim Welfare Society India is a social welfare organisation focused on supporting communities through education, healthcare awareness and initiatives aimed at improving the lives of underprivileged people.",
+    "readMore": "Read More About Us"
+  },
+  "focusAreas": {
+    "title": "Our Focus Areas",
+    "subtitle": "Dedicated to long-term community empowerment through three foundational pillars",
+    "exploreMore": "Explore Initiative"
+  },
+  "missionVision": {
+    "missionTitle": "Our Mission",
+    "visionTitle": "Our Vision",
+    "tag": "Guiding Institutional Principles"
+  },
+  "campaigns": {
+    "featuredTitle": "Featured Campaign",
+    "amuTitle": "AMU Kishanganj Centre Campaign",
+    "exploreCampaign": "Explore Campaign",
+    "timelineTitle": "Historical Milestones",
+    "disclaimer": "Historical public milestones concerning higher educational access in Seemanchal, Bihar."
+  },
+  "featuredArticle": {
+    "badge": "Historical Featured Article",
+    "readArticle": "Read Full Article",
+    "publishedOn": "Published",
+    "author": "Author"
+  },
+  "whyWorkMatters": {
+    "title": "Why Our Work Matters",
+    "subtitle": "Empowering communities by addressing systemic challenges with compassion, dignity, and education"
+  },
+  "getInvolved": {
+    "title": "Get Involved",
+    "subtitle": "Join our network of dedicated citizens striving to make a meaningful difference",
+    "volunteerTitle": "Become a Volunteer",
+    "volunteerDesc": "Contribute your time, skills, and passion to grassroots community initiatives and public health drives.",
+    "volunteerBtn": "Register as Volunteer",
+    "memberTitle": "Become a Member",
+    "memberDesc": "Join our official membership body to participate in organisational discussions and social initiatives.",
+    "memberBtn": "Apply for Membership",
+    "donateTitle": "Support Our Mission",
+    "donateDesc": "Contribute towards education, healthcare, and community welfare projects across India.",
+    "donateBtn": "Make a Contribution"
+  },
+  "newsSection": {
+    "title": "Latest News & Historical Updates",
+    "subtitle": "Press coverage, historical opinion pieces, and community welfare reports",
+    "readMore": "Read Article",
+    "allNews": "View All News & Media"
+  },
+  "galleryPreview": {
+    "title": "Community Gallery",
+    "subtitle": "Moments of civic participation, education assemblies, and community outreach",
+    "viewFull": "View Full Gallery"
+  },
+  "newsletter": {
+    "heading": "Be Part of the Change",
+    "text": "Stay connected with our social initiatives, educational updates, and community welfare programs.",
+    "placeholder": "Enter your email address",
+    "button": "Subscribe to Updates",
+    "success": "Thank you for subscribing! We appreciate your engagement with AMWSI.",
+    "error": "Please enter a valid email address."
+  },
+  "footer": {
+    "rights": "All Rights Reserved. All Muslim Welfare Society India (AMWSI).",
+    "quickLinks": "Quick Links",
+    "programmes": "Our Programmes",
+    "getInvolved": "Get Involved",
+    "legal": "Legal & Governance",
+    "note": "A registered non-profit social welfare organisation committed to education, healthcare, and community welfare."
+  }
+}

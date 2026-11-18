@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  body {
+    @apply bg-[#FCFAF5] text-brand-darkText antialiased;
+    overflow-x: hidden;
+  }
+
+  /* Noto Nastaliq Urdu adjustments for line heights */
+  [dir="rtl"] {
+    line-height: 1.9;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FAF8F0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #C6A45C;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #145A32;
+}
+
+/* Subtle image card transitions */
+.editorial-card {
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.editorial-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 32px -6px rgba(16, 61, 41, 0.12);
+}
+
+/* Elegant gold gradient accent line */
+.gold-line {
+  height: 2px;
+  background: linear-gradient(90deg, #C6A45C 0%, #145A32 50%, #C6A45C 100%);
+}
